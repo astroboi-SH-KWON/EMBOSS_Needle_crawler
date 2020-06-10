@@ -125,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591674483543</updated>
-      <workItem from="1591674488809" duration="31337000" />
+      <workItem from="1591674488809" duration="31563000" />
     </task>
     <servers />
   </component>
@@ -196,17 +196,6 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="-7" y="0" width="943" height="1087" key="dock-window-2/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591769052805" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Logic.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EMBOSS_Needle_crawler$emboss_needle.coverage" NAME="emboss_needle Coverage Results" MODIFIED="1591679862245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

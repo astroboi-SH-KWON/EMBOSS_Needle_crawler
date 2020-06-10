@@ -47,7 +47,7 @@ def main():
 
             logic.add_needle_result(final_idx, a_seq_name, crwl_txt_arr, needle_result_list)
 
-        util.make_excel(WORK_DIR + "first_excel_output/result_" + input_file.replace(".txt", ""), needle_result_list)
+        util.make_excel(WORK_DIR + "crawler_output/result_" + input_file.replace(".txt", ""), needle_result_list)
 
 start_time = clock()
 print("start >>>>>>>>>>>>>>>>>>")
