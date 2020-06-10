@@ -29,6 +29,28 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.Test">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EMBOSS_Needle_crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EMBOSS_Needle_crawler" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,6 +98,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Test" />
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.emboss_needle" />
       </list>
     </recent_temporary>
@@ -102,61 +125,92 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591674483543</updated>
-      <workItem from="1591674488809" duration="25965000" />
+      <workItem from="1591674488809" duration="31337000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="2269" y="287" key="FileChooserDialogImpl" timestamp="1591749911069">
       <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
     <state x="2269" y="287" key="FileChooserDialogImpl/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591749911069" />
-    <state width="1813" height="315" key="GridCell.Tab.0.bottom" timestamp="1591739986243">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="973" height="315" key="GridCell.Tab.0.bottom" timestamp="1591772318688">
+      <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
     <state width="1813" height="315" key="GridCell.Tab.0.bottom/0.0.1858.1080/1982.-414.1018.1920@0.0.1858.1080" timestamp="1591739986243" />
-    <state width="973" height="311" key="GridCell.Tab.0.bottom/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591698504484" />
-    <state width="1813" height="315" key="GridCell.Tab.0.center" timestamp="1591739986243">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="973" height="315" key="GridCell.Tab.0.bottom/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591772318688" />
+    <state width="973" height="315" key="GridCell.Tab.0.center" timestamp="1591772318688">
+      <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
     <state width="1813" height="315" key="GridCell.Tab.0.center/0.0.1858.1080/1982.-414.1018.1920@0.0.1858.1080" timestamp="1591739986243" />
-    <state width="973" height="311" key="GridCell.Tab.0.center/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591698504484" />
-    <state width="1813" height="315" key="GridCell.Tab.0.left" timestamp="1591739986243">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="973" height="315" key="GridCell.Tab.0.center/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591772318688" />
+    <state width="973" height="315" key="GridCell.Tab.0.left" timestamp="1591772318687">
+      <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
     <state width="1813" height="315" key="GridCell.Tab.0.left/0.0.1858.1080/1982.-414.1018.1920@0.0.1858.1080" timestamp="1591739986243" />
-    <state width="973" height="311" key="GridCell.Tab.0.left/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591698504484" />
-    <state width="1813" height="315" key="GridCell.Tab.0.right" timestamp="1591739986243">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="973" height="315" key="GridCell.Tab.0.left/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591772318687" />
+    <state width="973" height="315" key="GridCell.Tab.0.right" timestamp="1591772318688">
+      <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
     <state width="1813" height="315" key="GridCell.Tab.0.right/0.0.1858.1080/1982.-414.1018.1920@0.0.1858.1080" timestamp="1591739986243" />
-    <state width="973" height="311" key="GridCell.Tab.0.right/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591698504484" />
-    <state width="973" height="699" key="GridCell.Tab.1.bottom" timestamp="1591683127683">
+    <state width="973" height="315" key="GridCell.Tab.0.right/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591772318688" />
+    <state width="973" height="699" key="GridCell.Tab.1.bottom" timestamp="1591770640987">
       <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
-    <state width="973" height="699" key="GridCell.Tab.1.bottom/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591683127683" />
-    <state width="973" height="699" key="GridCell.Tab.1.center" timestamp="1591683127683">
+    <state width="973" height="699" key="GridCell.Tab.1.bottom/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591770640987" />
+    <state width="973" height="699" key="GridCell.Tab.1.center" timestamp="1591770640987">
       <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
-    <state width="973" height="699" key="GridCell.Tab.1.center/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591683127683" />
-    <state width="973" height="699" key="GridCell.Tab.1.left" timestamp="1591683127683">
+    <state width="973" height="699" key="GridCell.Tab.1.center/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591770640987" />
+    <state width="973" height="699" key="GridCell.Tab.1.left" timestamp="1591770640987">
       <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
-    <state width="973" height="699" key="GridCell.Tab.1.left/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591683127683" />
-    <state width="973" height="699" key="GridCell.Tab.1.right" timestamp="1591683127683">
+    <state width="973" height="699" key="GridCell.Tab.1.left/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591770640987" />
+    <state width="973" height="699" key="GridCell.Tab.1.right" timestamp="1591770640987">
       <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
-    <state width="973" height="699" key="GridCell.Tab.1.right/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591683127683" />
+    <state width="973" height="699" key="GridCell.Tab.1.right/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591770640987" />
     <state x="1991" y="187" key="SettingsEditor" timestamp="1591674660333">
       <screen x="1982" y="-414" width="1018" height="1920" />
     </state>
     <state x="1991" y="187" key="SettingsEditor/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591674660333" />
+    <state x="922" y="0" width="943" height="1087" key="dock-window-1" timestamp="1591769099658">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="922" y="0" width="943" height="1087" key="dock-window-1/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591769099658" />
+    <state x="-7" y="0" width="943" height="1087" key="dock-window-2" timestamp="1591769052805">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="-7" y="0" width="943" height="1087" key="dock-window-2/0.0.1858.1080/1982.-414.1018.1920@1982.-414.1018.1920" timestamp="1591769052805" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Logic.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EMBOSS_Needle_crawler$emboss_needle.coverage" NAME="emboss_needle Coverage Results" MODIFIED="1591679862245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/EMBOSS_Needle_crawler$Test.coverage" NAME="Test Coverage Results" MODIFIED="1591739986238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EMBOSS_Needle_crawler$Main.coverage" NAME="Main Coverage Results" MODIFIED="1591770640978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EMBOSS_Needle_crawler$Test.coverage" NAME="Test Coverage Results" MODIFIED="1591771467849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

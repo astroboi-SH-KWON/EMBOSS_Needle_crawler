@@ -11,7 +11,7 @@ WEB_DRV_PATH = "C:/Users/terry/chromedriver.exe"
 
 WORK_DIR = "D:/000_WORK/YuGooSang_KimHuiKwon/20200609/WORK_DIR/"
 INPUT_EXCEL = "switching NGS analysis_Input.xlsx"
-INPUT_TXT = ["gDNA_0609.txt", "Plasmid_0609.txt"]
+INPUT_TXT = ["gDNA_0609_test.txt"]
 
 TARGET_URL = "https://www.ebi.ac.uk/Tools/psa/emboss_needle/"
 ############### end setting env  ################
@@ -22,18 +22,15 @@ WEB_DRV = webdriver.Chrome(chrome_options=OPT, executable_path=WEB_DRV_PATH)
 def main():
     util = Util.Utils()
     logic_prep = LogicPrep.LogicPreps(WEB_DRV, TARGET_URL)
-    # logic = Logic.Logics()
+    logic = Logic.Logics()
 
     for input_file in INPUT_TXT:
         needle_result_list = []
-
         input_list = util.read_tb_txt(WORK_DIR + input_file)
 
         for val_arr in input_list:
             final_idx = val_arr[1]
-            # asequence = "TATATATCTTGTGGAAAGGACGAAACACCGGACAACCTCTACCTCCGCAGTTTATTTTGCTATCTCTATACTAGTTTCGTGACAACCTCTACCTCCGCACGGTGCCATGTGAGTACAAAGCTTGGCGTACCGCGATCTCTACTCTACCACTTGTACTTCAGCGGTCAGCTTACTCGACTTAA"
             asequence = val_arr[3]  # NGS read
-            # bsequence = "TATATATCTTGTGGAAAGGACGAAACACCGGACAACCTCTACCTCCGCAGTTTTAGAGCTAGAAATAGCAAGTTAAAATAAGGCTAGTCCGTTATCAACTTGAAAAAGTGGCACCGAGTCGGTGCCACATGGCACGGTGCGGAGGTAGAGGTTGTCATTTTTTTTGCTATCTCTATACTAGTTTCGTGACAACCTCTACCTCCGCACGGTGCCATGTGAGTACAAAGCTTGGCGTACCGCGATCTCTACTCTACCACTTGTACTTCAGCGGTCAGCTTACTCGACTTAA"
             bsequence = val_arr[4]  # Reference
             logic_prep.go_to_url(TARGET_URL)
             logic_prep.input_data_by_id("pn_stype", "dna")
@@ -48,42 +45,12 @@ def main():
             logic_prep.get_by_xpath("//pre[@id='alignmentContent']", False)
             crwl_txt = logic_prep.get_by_xpath("//pre[@id='alignmentContent']", False).text
 
-            crwl_txt_a_seq_name = crwl_txt[crwl_txt.index("# 1:") + len("# 1:"):]
-            a_seq_name = crwl_txt_a_seq_name[:crwl_txt_a_seq_name.index("\n")]
-            print("a_seq_name : " + a_seq_name)
-            crwl_txt_b_seq_name = crwl_txt_a_seq_name[crwl_txt_a_seq_name.index("# 2:") + len("# 2:"):]
-            b_seq_name = crwl_txt_b_seq_name[:crwl_txt_b_seq_name.index("\n")]
-            # print("b_seq_name : " + b_seq_name)
+            a_seq_name, crwl_txt_arr = logic.extract_data(crwl_txt)
+            # print(crwl_txt_arr)
 
-            crwl_txt_c = crwl_txt_b_seq_name[crwl_txt_b_seq_name.index("#=======================================") + len(
-                "#======================================="):].replace("#---------------------------------------", "")
-            # print("crwl_txt_c : " + crwl_txt_c)
-
-            crwl_txt_arr = crwl_txt_c.split("\n")
-
-            try:
-                for i in range(len(crwl_txt_arr)):
-                    crwl_txt_arr.remove('')
-            except:
-                print("no blank element")
-
-            idx = crwl_txt_arr[0][len(a_seq_name):].index("1")
-            a_seq = ""
-            needle = ""
-            b_seq = ""
-            for i in range(len(crwl_txt_arr)):
-                tmp_str = crwl_txt_arr[i][len(a_seq_name) + idx + 2:]
-                if i % 3 == 0:
-                    a_seq += tmp_str.split(" ")[0]
-                elif i % 3 == 1:
-                    needle += tmp_str
-                else:
-                    b_seq += tmp_str.split(" ")[0]
-
-            needle_result_list.append([final_idx, a_seq, needle, b_seq])
+            logic.add_needle_result(final_idx, a_seq_name, crwl_txt_arr, needle_result_list)
 
         util.make_excel(WORK_DIR + "first_excel_output/result_" + input_file.replace(".txt", ""), needle_result_list)
-
 
 
 
